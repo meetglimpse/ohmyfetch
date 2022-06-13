@@ -46,6 +46,7 @@ export interface $Fetch {
 
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 const retryStatusCodes = new Set([
+  401, // Unauthorized
   408, // Request Timeout
   409, // Conflict
   425, // Too Early
